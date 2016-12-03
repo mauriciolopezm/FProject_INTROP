@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+  <title>Substance Abuse and Violence</title>
+
+  <link rel="icon" href="https://openclipart.org/image/2400px/svg_to_png/211414/1420411267.png">
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:600,500,400,300,200,100,400italic0&subset=latin,greek,latin-ext' rel='stylesheet' type='text/css'>
+
+<style>
+
+* { font-family: 'Tw Cen MT', sans-serif; }
+
+body {
+  margin: 0% 0%;
+  background-image: url(http://www.jardan.com.au/wp/wp-content/uploads/canvas_grey-562x336.jpg)
+}
+
+ul.nav {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: auto;
+  position: relative;
+  left: 120px;
+}
+ul.nav li { float: left; }
+ul.nav li a {
+  display: inline-block;
+  color: white;
+  padding: 16px 20px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+}
+ul.nav li a.active {
+  color: black;
+  background-color: darkgreen;
+  font-weight: bold;
+}
+ul.nav li:hover {
+  color: white;
+  background-color: #4E5251;
+  transition: 0.5s;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: white;
+    color: #4E5251;
+    padding: 1px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #4E5251;
+    min-width: 160px;
+    font-size: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: darkgreen}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: white;
+}
+
+table {
+  align: middle;
+  margin: 0 auto;
+  width: 1000px;
+  height: 10px;
+  border-width: 5px 5px;
+  border-style: solid;
+  border-color: #4E5251;
+  background: #D3D3D3;
+  padding: 5px;
+  border-spacing: 5px;
+}
+
+th {
+  color: white;
+  background-color: darkgreen;
+  border-width: 5px 5px;
+  border-style: solid;
+  border-color: black;
+}
+
+th, td {
+  text-align: center;
+  padding: 15px;
+}
+
+h1 {
+  color: #4E5251;
+  text-align: center;
+  font-size: 150px;
+}
+
+h2 {
+  color: black;
+  margin: 0 auto;
+  vertical-align: center;
+  text-align: justify;
+  font-size: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 10em;
+  animation: type 14s steps(60);
+}
+
+h3 {
+  color: black;
+  margin: 0 auto;
+  vertical-align: center;
+  text-align: justify;
+  font-size: 40px;
+  padding: 40px;
+}
+
+
+@keyframes type{
+  from { width: 0; }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<ul class="nav">
+  <li><a href="/myapp/home/">Home</a></li>
+  <li><a href="/myapp/dataset/"class="active">Dataset</a></li>
+  <li><a href="/myapp/regressions/">Regressions</a></li>
+  <li><a href="/myapp/graphs/">Graphs</a></li>
+</ul>
+
+<p>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</p>
+
+<div class="dropdown">
+  <button class="dropbtn">Hint: click here to get to the city data w/o scrolling</button>
+  <div class="dropdown-content">
+    <a href="#SFtable">SAN FRAN</a>
+    <a href="#CHItable">CHICAGO</a>
+  </div>
+</div>
+
+<p>
+
+<h1>DATA OVERVIEW</h1>
+<h2> ... see tables below </h2>
+<img src="http://static.wixstatic.com/media/21eda8_af7bc28dd30644b58299ed9f4334c8c7~mv2.png" alt="ROPE" width="100%" align="CENTER">
+
+<h3>EXPLANATION OF VARIABLES:
+IncidntNum = # of homicides on a given day in the named month;
+MedQ= Price of medium quality Marijuana per Ounce on given day of the month;
+month = month of day in which incident occured </h3>
+
+  <p>
+  <p>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  </p>
+
+<h1>SAN FRAN</h1>
+
+<a id="SFtable">
+  {{ html_table | safe }}</a>
+
+    <p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    </p>
+
+    <HR WIDTH="100%" ALIGN="center" color="darkgreen" size="10">
+    <HR WIDTH="100%" ALIGN="center" color="darkgreen" size="10">
+    <HR WIDTH="100%" ALIGN="center" color="darkgreen" size="10">
+
+    <p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    </p>
+
+
+    <h1>CHICAGO</h1>
+
+    <a id="CHItable">
+
+
+        <table>
+          <tr><th>Price for substance per ounce</th>  <th>Date</th> <th># of homicide per date</th></tr>
+            <tr><td>Spaceholder</td> <td>Spaceholder</td> <td>Spaceholder</td></tr>
+        </table></a>
+
+      <p>
+
+<p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</p>
+
+<h4>Copyright: ChaosComputerClub CCC</h3>
+
+</body>
+</html>
